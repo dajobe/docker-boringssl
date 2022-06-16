@@ -1,0 +1,4 @@
+git clone https://boringssl.googlesource.com/boringssl
+
+https://github.com/curl/curl/issues/8416
+https://stackoverflow.com/questions/42391088/how-to-build-curl-with-boringssl

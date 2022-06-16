@@ -22,6 +22,8 @@ for lib in ssl crypto; do
   cp -v -p ${cmake_build_dir}/${lib}/lib${lib}.* ${lib_dir}/
 done
 
+ldconfig
+
 # includes
 for subdir in openssl; do
   mkdir -p "${include_dir}/${subdir}"

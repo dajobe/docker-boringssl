@@ -18,7 +18,7 @@ cd /build/boringssl
 # libs
 for lib in ssl crypto; do
   # remove any OpenSSL shlibs (debian package libssl1.1)
-  rm -v -f ${lib_dir}/lib${lib}.*
+  rm -v -f ${lib_dir}/lib${lib}*
   cp -v -p ${cmake_build_dir}/${lib}/lib${lib}.* ${lib_dir}/
 done
 

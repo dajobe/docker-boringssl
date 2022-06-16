@@ -10,6 +10,6 @@ build:
 	$(DOCKER) build -t $(IMAGE_NAME) .
 
 # This won't work unless you have already set up the repository config
-#push:
-#	@echo "Pushing image to https://hub.docker.com/"
-#	$(DOCKER) push $(IMAGE_NAME):$(IMAGE_TAG)
+push:
+	@echo "Pushing image to https://hub.docker.com/"
+	$(DOCKER) push $(IMAGE_NAME):$(IMAGE_TAG)
